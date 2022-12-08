@@ -24,5 +24,8 @@ def start_puzzle(day=0,year=0,dir='.'):
     file.close()
     return list(map(lambda x: x.rstrip(),lines))
 
-
-    
+def load_test(day,dir='.'):
+    file=open(f"{dir}/day{day}_test","r")
+    lines=file.readlines()
+    file.close()
+    return list(map(lambda x: x.rstrip(),lines))
