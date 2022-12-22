@@ -29,3 +29,9 @@ def load_test(day,dir='.'):
     lines=file.readlines()
     file.close()
     return list(map(lambda x: x.rstrip(),lines))
+
+def load_input(day,dir='.'):
+    file=open(f"{dir}/day{day}_input","r")
+    lines=file.readlines()
+    file.close()
+    return list(map(lambda x: x.rstrip(),lines))
